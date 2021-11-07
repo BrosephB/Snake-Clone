@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=2560 height=1440></canvas>
+      <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,9 +29,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Snake-Clone.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Snake-Clone.data.br",
-        frameworkUrl: buildUrl + "/Snake-Clone.framework.js.br",
-        codeUrl: buildUrl + "/Snake-Clone.wasm.br",
+        dataUrl: buildUrl + "/Snake-Clone.data.gz",
+        frameworkUrl: buildUrl + "/Snake-Clone.framework.js.gz",
+        codeUrl: buildUrl + "/Snake-Clone.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Snake",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "2560px";
-        canvas.style.height = "1440px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
       loadingBar.style.display = "block";
 
